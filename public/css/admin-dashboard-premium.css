@@ -1,0 +1,96 @@
+/* ===== FONT ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fffefe;
+    padding: 50px;
+    color: #fff;
+}
+
+/* ===== TITLE ===== */
+h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #0a0a0a;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 0 0 20px rgba(189, 201, 226, 0.5);
+    letter-spacing: 1px;
+    animation: fadeDown 0.8s ease;
+}
+
+/* ===== FADE ANIMATION ===== */
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== CARD WRAPPER ===== */
+.dashboard-cards {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+/* ===== PREMIUM CARD STYLE ===== */
+.dashboard-card {
+    width: 260px;
+    padding: 25px 20px;
+    border-radius: 20px;
+    background: rgba(169, 169, 169, 0.08);
+    border: 1px solid rgba(185, 185, 185, 0.2);
+    backdrop-filter: blur(12px);
+    text-align: center;
+    text-decoration: none;
+    color: #696b6c;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    box-shadow:
+        0 0 15px rgba(71, 99, 128, 0.3),
+        inset 0 0 20px rgba(199, 211, 241, 0.05);
+
+    transition: 0.35s ease-in-out;
+
+    animation: fadeUp 0.8s ease;
+}
+
+/* fadeUp animation */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== HOVER EFFECT ===== */
+.dashboard-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    background: rgba(255, 215, 0, 0.15);
+    box-shadow:
+        0 0 20px rgba(43, 45, 53, 0.7),
+        inset 0 0 25px rgba(255, 215, 0, 0.1);
+    color: #fff;
+}
+
+/* ===== ICON STYLE ===== */
+.dashboard-card i {
+    font-size: 3rem;
+    margin-bottom: 12px;
+    color: #FFD700;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    display: block;
+}
+
+/* ===== LOGOUT ===== */
+.dashboard-card.logout {
+    border: 1px solid #ff3b3b;
+    color: #ff4b4b;
+    background: rgba(255, 0, 0, 0.08);
+}
+
+.dashboard-card.logout:hover {
+    background: rgba(255, 0, 0, 0.18);
+    box-shadow:
+        0 0 25px rgba(255, 0, 0, 0.7),
+        inset 0 0 30px rgba(255, 0, 0, 0.12);
+    color: #fff;
+}

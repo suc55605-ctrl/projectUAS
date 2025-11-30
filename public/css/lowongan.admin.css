@@ -1,0 +1,144 @@
+/* ===============================
+   LAYOUT COLUMN
+================================*/
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+    background: #f5f6fa;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===============================
+   CARD STYLE
+================================*/
+.admin-card {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+.admin-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* ===============================
+   BUTTON
+================================*/
+.btn-primary-admin {
+    background: #2563eb;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.btn-primary-admin:hover {
+    background: #1d4ed8;
+}
+
+.btn-yellow {
+    background: #facc15;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.btn-yellow:hover {
+    background: #eab308;
+}
+
+.btn-red {
+    background: #dc2626;
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.btn-red:hover {
+    background: #b91c1c;
+}
+
+.btn-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   TABLE STYLE
+================================*/
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.admin-table th {
+    background: #1e293b;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.admin-table td {
+    padding: 10px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.admin-table tr:hover {
+    background: #f1f5f9;
+}
+
+/* ===============================
+   GRID LOWONGAN DI CARD BAWAH
+================================*/
+.lowongan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.lowongan-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.lowongan-item:hover {
+    background: #f1f5f9;
+    transform: translateY(-2px);
+}
+
+.lowongan-item h3 {
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.lowongan-item p {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 10px;
+}

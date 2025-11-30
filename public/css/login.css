@@ -1,0 +1,105 @@
+/* =============================
+   GLOBAL STYLE
+============================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #7ab8ff;
+}
+
+/* =============================
+   LOGIN CONTAINER
+============================= */
+form {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(211, 211, 211, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px 35px;
+    border-radius: 18px;
+    width: 350px;
+    text-align: center;
+
+    box-shadow:
+        0 0 20px rgba(60, 145, 255, 0.25),
+        inset 0 0 15px rgba(48, 106, 221, 0.07);
+
+    animation: fadeIn 0.8s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* =============================
+   TITLE
+============================= */
+form h3 {
+    color: #010101;
+    font-size: 1.9rem;
+    margin-bottom: 25px;
+    text-shadow: 0 0 12px rgba(32, 131, 253, 0.6);
+}
+
+/* =============================
+   INPUT STYLE
+============================= */
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(82, 150, 246, 0.4);
+    background: rgba(207, 218, 241, 0.06);
+    color: #000000;
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+form input::placeholder {
+    color: #bbbbbb;
+}
+
+form input:focus {
+    border-color: #78aaf5;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    outline: none;
+}
+
+/* =============================
+   BUTTON STYLE
+============================= */
+form button {
+    width: 100%;
+    background: #386be3;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #6ac3ff;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+/* =============================
+   ERROR MESSAGE
+============================= */
+form p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}

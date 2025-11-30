@@ -1,0 +1,147 @@
+/* ==================================== */
+/* 1. STYLING UMUM & TYPOGRAPHY */
+/* ==================================== */
+:root {
+    --primary-color: #007bff; /* Warna Biru Utama Bootstrap */
+    --secondary-color: #6c757d; /* Abu-abu */
+    --background-light: #f8f9fa; /* Warna Latar Belakang Cerah */
+    --text-dark: #343a40;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Ganti font agar terlihat modern */
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* ==================================== */
+/* 2. HERO SECTION */
+/* ==================================== */
+.hero {
+    background: linear-gradient(rgba(56, 53, 53, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('/bacground landing.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh; /* Biar full layar */
+    
+    color: white;
+    text-align: center;
+
+    display: flex; /* Biar text ketengah */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+.hero .btn-light {
+    border-radius: 50px; /* Tombol bulat */
+    padding: 10px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.hero .btn-light:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px); /* Efek angkat saat di-hover */
+}
+
+/* ==================================== */
+/* 3. SECTION BERITA (CARDS) */
+/* ==================================== */
+#section-berita {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card {
+    border: none; /* Hilangkan border Bootstrap default */
+    border-radius: 15px; /* Sudut membulat */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efek angkat saat di-hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important; /* Bayangan lebih tebal */
+}
+
+.card-img-top {
+    border-bottom: 4px solid var(--primary-color); /* Garis warna di bawah gambar */
+}
+
+.card-body h5 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* ==================================== */
+/* 4. SECTION LOWONGAN (LIST GROUP) */
+/* ==================================== */
+#section-lowongan {
+    margin-bottom: 80px;
+}
+
+.list-group-item-action {
+    border-left: 5px solid transparent; /* Garis samping yang akan muncul saat di-hover */
+    transition: all 0.3s ease;
+    margin-bottom: 8px; /* Jarak antar item */
+    border-radius: 8px; /* Sudut membulat */
+    border: 1px solid #e9ecef; /* Border lembut */
+}
+
+.list-group-item-action:hover {
+    background-color: #e9ecef;
+    border-left: 5px solid var(--primary-color); /* Menampilkan garis biru saat di-hover */
+    transform: translateX(5px);
+}
+
+.list-group-item-action strong {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.list-group-item-action small {
+    color: var(--secondary-color);
+}
+
+/* Tombol Lihat Semua di bawah section */
+.container > .btn-primary {
+    display: block; /* Membuat tombol selebar container */
+    width: fit-content;
+    margin: 20px auto 0 auto !important;
+    border-radius: 50px;
+    padding: 10px 40px;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.container > .btn-primary:hover {
+    transform: scale(1.05);
+}
